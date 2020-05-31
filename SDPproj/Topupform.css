@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans SC', sans-serif!important;
+  margin:0;
+  padding:0;
+  width: 100%;
+  max-width:100%;
+  background-color:#303030 !important;
+}
+
+
+.wrapper {
+  position: relative;
+  min-width: 1080px;
+}
+
+input:focus {
+  outline:0;
+  border-width: 1.5px;
+  border-color: #03a9f4;
+}
+
+
+#link {
+  text-decoration: none;
+  color: white;
+}
+
+
+.topup-form {
+  position: relative;
+  height: 900px;
+  min-width: 800px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  background-color: #424242;
+  color: white;
+  margin-top: 50px;
+}
+
+#form-title {
+  position: relative;
+  height: 70px;
+  background-color: black;
+  border-bottom: 1px solid #03a9f4;
+  color: #03a9f4;
+  font-size: 25px;
+  padding-top: 18px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+}
+
+
+#cardnumber {
+  position: relative;
+  min-width: 500px;
+  max-width: 500px;
+  height: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+}
+
+#cardnumber > input {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 20px;
+  border-style: none;
+}
+
+#cardexpirydate {
+  position: relative;
+  margin-top: 5px;
+  position: relative;
+  min-width: 500px;
+  max-width: 500px;
+  height: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#cardexpirydate > input {
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  border-style: none;
+  padding-left: 5px;
+}
+
+#card-cvv {
+  margin-left: 95px;
+}
+
+#cardexpirydatetitle {
+  position: relative;
+  margin-top: 55px;
+  position: relative;
+  min-width: 500px;
+  max-width: 500px;
+  height: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#expiry-title {
+  display: inline-block;
+  font-size: 20px;
+}
+
+#cvv-title {
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 195px;
+}
+
+#select-method {
+  position: relative;
+  max-width: 500px;
+  height: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#select-method > select {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding-left: 15px;
+  border-style:none;
+  text-align: center;
+  font-size: 20px;
+}
+
+select:required:invalid {
+  color: grey;
+}
+
+option {
+  color: grey;
+}
+
+#card-method-title {
+  position: relative;
+  margin-top: 100px;
+  position: relative;
+  min-width: 500px;
+  max-width: 500px;
+  height: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 18px;
+}
+
+#card-image > img {
+  width: 40px;
+  height: 40px;
+}
+
+#topup-amount {
+  margin-top: 60px;
+  position: relative;
+  min-width: 500px;
+  max-width: 500px;
+  height: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+#topup-amount > input {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border-style: none;
+  border-bottom: 1px solid grey;
+  font-size: 20px;
+  padding-left: 5px;
+}
+
+#submit-btn {
+  position: relative;
+  max-width: 500px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+}
+
+#submit-btn > input {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #03a9f4;
+  border-style: solid;
+  border-width: 0.5px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+#Cancel {
+  position: relative;
+  max-width: 500px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  background-color: #DB4141;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+#validate {
+  position: relative;
+  max-width: 600px;
+  min-height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  padding-left: 15px;
+  margin-top: 40px;
+  color: #D8000C;
+  margin-bottom: 100px;
+  background-color: #FFD2D2;
+  display: none;
+}

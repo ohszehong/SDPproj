@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans SC', sans-serif!important;
+  margin:0;
+  padding:0;
+  width: 100%;
+  max-width:100%;
+  background-color:#212121 !important;
+}
+
+.wrapper {
+  position: relative;
+  min-width: 1080px;
+}
+
+.profile-template {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  min-height: 1200px;
+  min-width: 1080px;
+  background-color: #212121;
+}
+
+#user-info-1 {
+  background-color: #303030;
+  margin: 20px;
+  border-left-style: none;
+}
+
+#user-info-2 {
+  background-color: #303030;
+  margin:20px;
+  border-left-style: none;
+}
+
+.ProfilePicture {
+  position: relative;
+  min-height: 200px;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+  margin-top: 40px;
+
+}
+
+.UpdatePic {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+  background-color: grey;
+  opacity: 0;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  transition: 0.5s;
+  background-image: url("SDP materials/camera.jpg");
+  background-size: cover;
+}
+
+.UpdatePic:hover {
+  opacity:0.5;
+  cursor: pointer;
+}
+
+
+.ProfilePicture > img {
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 200px;
+  max-height: 200px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+
+#ProfileUpdate {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+
+#choosefile {
+  display: none;
+}
+
+#user-name {
+  min-height: 50px;
+  max-width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+
+
+
+}
+
+#user-details {
+  min-height: 200px;
+  margin-left: 30px;
+  margin-right: 15px;
+  font-size: 18px;
+  margin-top: 30px;
+  color: white;
+
+}
+
+#user-balance {
+  max-height: 200px;
+  margin-left: 30px;
+  margin-right: 15px;
+  font-size: 18px;
+  color: white;
+}
+
+#topup-btn , #changepw-btn , #updateacc-btn{
+  position: relative;
+  width: 100%;
+  min-height: 50px;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 13px;
+
+  background-color: #03a9f4;
+}
+
+#changepw-btn {
+  margin-top: 20px;
+}
+
+#link {
+  text-decoration: none;
+  color: white;
+}
+
+.bottom-btn {
+  position: relative;
+  min-height: 100px;
+  margin-left: 30px;
+  margin-right: 15px;
+  font-size: 18px;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+#user-info-2-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  position: relative;
+  min-height: 50px;
+
+  border-bottom: 0.5px solid grey;
+
+
+
+}
+
+#user-info-2-link-ph , #user-info-2-link-th , #user-info-2-link-notify , #user-info-2-link-meals , #user-info-2-link-sr {
+  position: relative;
+  min-height: 50px;
+  color: white;
+  font-size: 15px;
+  padding-top: 15px;
+  text-align: center;
+
+
+
+}
+
+@media screen and (max-width:1100px) {
+  #user-info-2-link-ph {
+    padding-top: 5px;
+  }
+}
+
+#user-info-2-link-ph:hover , #user-info-2-link-th:hover , #user-info-2-link-notify:hover , #user-info-2-link-meals:hover , #user-info-2-link-sr:hover {
+  background-color: #03a9f4;
+  transition: 0.5s;
+}
+
+#stall-info {
+  min-height: 200px;
+  margin-left: 30px;
+  margin-right: 15px;
+  font-size: 18px;
+  margin-top: 40px;
+  color: white;
+
+
+}
+
+#edit-stall {
+  font-size: 10px;
+}
+
+#edit-stall > img {
+  margin-bottom: 3px;
+  max-width: 10px;
+  max-height: 10px;
+}
+
+#stall-image {
+  position: relative;
+  min-height: 150px;
+  max-height: 150px;
+  min-width: 310px;
+  max-width: 310px;
+  margin-top: 40px;
+}
+
+.UpdateStall {
+  min-height: 150px;
+  max-height: 150px;
+  min-width: 310px;
+  max-width: 310px;
+  opacity: 0;
+  position: absolute;
+  transition: 0.5s;
+  background-image: url("SDP materials/camera.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.UpdateStall:hover {
+  opacity:0.5;
+  cursor: pointer;
+}
+
+#stall-image > img {
+  min-width: 310px;
+  max-width: 310px;
+  min-height: 150px;
+  max-height: 150px;
+  object-fit: cover;
+}

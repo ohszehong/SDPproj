@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do');
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+.header {
+  width: 100%;
+  min-width: 1080px;
+  height: 50px;
+  top:0;
+  background-color: #424242 !important;
+  z-index: 99;
+}
+
+#logo {
+  float: left;
+  width: 204px;
+  height: 45px;
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 35px;
+  color: white;
+  margin-left: 15px;
+  user-select: none;
+}
+
+#logo > img {
+  width: 35px;
+  height: 35px;
+}
+
+#userbtn {
+  position: relative;
+  display: grid;
+  max-width:400px;
+  min-width: 400px;
+  height:100%;
+  grid-template-columns: 0.75fr 0.75fr 0.75fr 0.85fr;
+  float: right;
+
+
+}
+
+#report {
+  position: relative;
+  min-height: 50px;
+
+
+}
+
+#report img {
+  max-height: 30px;
+  max-width: 50px;
+  margin-left: 33px;
+  margin-top: 8px;
+}
+
+
+#cart {
+  position: relative;
+  min-height: 50px;
+
+}
+
+#cart img {
+  max-height: 30px;
+  max-width: 50px;
+  margin-left: 33px;
+  margin-top: 8px;
+}
+
+#notification {
+  position: relative;
+  min-height: 50px;
+
+}
+
+#notification img {
+  max-height: 25px;
+  max-width: 50px;
+  margin-left: 35px;
+  margin-top: 11px;
+}
+
+#report:hover , #cart:hover , #notification:hover , #profile:hover{
+  background-color: #03a9f4;
+  transition: 0.5s;
+}
+
+#profile {
+  position: relative;
+  min-height: 50px;
+  border-left: 1px solid grey;
+}
+
+#profile img {
+  height: 40px;
+  width: 40px;
+  margin-left: 33px;
+  margin-top: 5px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+
+/* :hover .logout need to be modified later */
+
+#logout{
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 50px;
+  color: white;
+  font-size: 18px;
+  padding-top: 15px;
+  max-width: 150px;
+  float: left;
+}
+
+#logout img {
+  max-height: 25px;
+  max-width: 40px;
+  padding-bottom: 5px;
+
+}
+
+#logout:hover {
+  background-color: #DB4141;
+  transition: 0.5s;
+}
+
+
+/* .logout to be modifited later */
+
+#stallname {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 50px;
+  color: white;
+  font-size: 18px;
+  padding-top: 15px;
+  float: left;
+}
+
+#stallname:hover {
+  background-color: #03a9f4;
+  transition: 0.5s;
+}
+
+#orderpanel {
+  position: relative;
+  padding-left: 15px;
+  min-height: 50px;
+  color: white;
+  font-size: 18px;
+  padding-top: 15px;
+  padding-right: 15px;
+  float: left;
+}
+
+#orderpanel:hover {
+  background-color: #03a9f4;
+  transition: 0.5s;
+}
+
+#orderpanel > img {
+  max-width: 20px;
+  max-height: 40px;
+}
+
+
+#hamburger {
+  position: absolute;
+  padding-top: 5px;
+  padding-left: 2px;
+  min-height: 50px;
+  min-width: 40px;
+  display:none;
+  cursor: pointer;
+  right:0;
+}
+
+#hamburger img {
+  max-width: 35px;
+  min-height: 40px;
+
+}
+
+@media screen and (max-width:1200px) {
+  #userbtn {
+    display: none;
+  }
+
+  #hamburger {
+    display: block;
+  }
+}
+
+#dropdown {
+  position: absolute;
+  padding-top: 5px;
+  padding-left: 2px;
+  min-height: 250px;
+  min-width: 300px;
+  margin-top: 50px;
+  cursor: pointer;
+  right:0;
+  display: none;
+  z-index: 200;
+  background-color: red;
+}
+
+.show {
+  display: block;
+}

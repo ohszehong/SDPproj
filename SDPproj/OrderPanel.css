@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans SC', sans-serif!important;
+  margin:0;
+  padding:0;
+  width: 100%;
+  max-width:100%;
+  background-color:#212121 !important;
+}
+
+.wrapper {
+  position: relative;
+  padding-top:50px;
+  min-width: 1080px;
+
+}
+
+.order-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  min-width: 1080px;
+  min-height: 650px;
+  max-height: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  background-color: #303030;
+}
+
+#accept-order {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 170px;
+  min-height: 600px;
+  max-height: 600px;
+  overflow-y: auto;
+  margin:20px;
+  background-color: #424242;
+}
+
+#complete-order {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 170px;
+  min-height: 600px;
+  max-height: 600px;
+  overflow-y: auto;
+  margin:20px;
+  background-color: #424242;
+}
+
+#accept-order::-webkit-scrollbar {
+width: 5px;
+}
+
+#accept-order::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+
+#complete-order::-webkit-scrollbar {
+width: 5px;
+}
+
+#complete-order::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+
+#accepting-order {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  min-height: 175px;
+  padding-right: 5px;
+  padding-left: 10px;
+  padding-top: 5px;
+  background-color: #505050;
+  color: #B3FFFFFF;
+}
+
+#completing-order {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  min-height: 175px;
+  padding-right: 5px;
+  padding-left: 10px;
+  padding-top: 5px;
+  background-color: #505050;
+  color: #B3FFFFFF;
+}
+
+#title-board {
+  display: grid;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  min-width: 1080px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  background-color: #303030;
+  color: white;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+#accept-title {
+  padding-left: 13px;
+}
+
+#complete-title {
+  padding-left: 13px;
+}
+
+#meal-title {
+  font-size: 27px;
+}
+
+#order-user-id {
+  font-size: 20px;
+}
+
+#meal-price {
+  font-size: 18px;
+}
+
+#order-date {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  color: grey;
+}
+
+#accept-btn {
+  float: right;
+  width: 100px;
+  height: 35px;
+  background-color: #03a9f4;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+#complete-btn {
+  float: right;
+  width: 100px;
+  height: 35px;
+  background-color: #03a9f4;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+#back-btn {
+  margin-top: 50px;
+  position: relative;
+  margin-right: 10px;
+  bottom:50px;
+  float: right;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  color: white;
+  padding-top: 8px;
+  font-size: 18px;
+  background-color: #DB4141;
+}
+
+#accept-order > img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 300px;
+  height: 240px;
+}
+
+#complete-order > img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 300px;
+  height: 240px;
+}
+
+#empty-text {
+  color: white;
+  font-size: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}

@@ -1,0 +1,44 @@
+
+
+.footer {
+  position: relative;
+  background-color: #000000;
+  min-height: 280px;
+  min-width: 1080px;
+  text-align: center;
+  color: white;
+}
+
+.footer-icons{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 500px;
+  max-height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  top:50px;
+}
+
+.icon {
+  max-height: 50px;
+}
+
+.icon > img {
+  width: 35px;
+  height: 35px;
+}
+
+#footer-text-1{
+  font-size: 12px;
+  position: relative;
+  margin-top:100px;
+}
+
+#footer-text-2{
+  position: relative;
+  font-size: 12px;
+  max-width: 420px;
+  margin-right: auto;
+  margin-left: auto;
+}

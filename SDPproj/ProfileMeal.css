@@ -1,0 +1,216 @@
+#user-info-2-link-meals {
+  background-color: #03a9f4;
+}
+
+#add-meals {
+  position: relative;
+  min-height: 100px;
+  padding-top: 25px;
+
+  border-bottom: 1px solid grey;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#add-meals-btn {
+  position: relative;
+  min-height: 40px;
+  margin-left: 15px;
+  width: 40px;
+  display:inline-block;
+
+  border-radius: 100px;
+
+  background-image: url("SDP materials/plus.png");
+  background-size: cover;
+
+}
+
+#add-meals-title {
+  position: relative;
+  margin-left:10px;
+  font-size: 18px;
+  color: white;
+  bottom:14px;
+}
+
+.meal-display {
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+  grid-auto-rows: 300px;
+  min-height: 200px;
+  max-height: 1200px;
+  overflow: auto;
+
+}
+
+#current-meal {
+  padding-top: 25px;
+  padding-left: 20px;
+  border-bottom: 1px solid grey;
+  margin-left: 15px;
+
+}
+
+#current-meal > img {
+  width: 350px;
+  height: 246.66px;
+  object-fit: cover;
+
+}
+
+#current-meal::-webkit-scrollbar {
+width: 5px;
+}
+
+#current-meal::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+
+.meal-display::-webkit-scrollbar {
+width: 5px;
+}
+
+.meal-display::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+
+#pending-meal {
+  color: grey;
+  font-size: 40px;
+  padding-top: 120px;
+  border-bottom: 1px solid grey;
+  margin-left: -20px;
+}
+
+#current-meal-info{
+  border-bottom: 1px solid grey;
+  color: white;
+  font-size: 18px;
+  padding-left: 15px;
+  padding-bottom:15px;
+  margin-right: 15px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#current-meal-info::-webkit-scrollbar {
+width: 5px;
+}
+
+#current-meal-info::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+
+#reject-info {
+  padding:0;
+  margin:0;
+}
+
+#meal-info {
+  margin:0;
+  padding:0;
+  font-size: 15px;
+}
+
+#meal-title {
+  margin:0;
+  padding:0;
+  font-size: 25px;
+}
+
+#meal-desc {
+  margin:0;
+  padding:0;
+  font-size:20px;
+  color:grey;
+  margin-bottom: 30px;
+}
+
+#update-btn {
+
+  max-width: 150px;
+  height: 40px;
+  text-align: center;
+  background-color: #03a9f4;
+  display: inline-block;
+}
+
+#link {
+  text-decoration: none;
+  color: white;
+}
+
+#available {
+  border:0;
+  background-color: #03a9f4;
+  display: inline-block;
+}
+
+#delete-form {
+  width: 30px;
+  height: 30px;
+  margin-left: 95%;
+  margin-top: 5px;
+}
+
+#delete-form > #delete-logo {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  right: 0;
+}
+
+#pending-image-border {
+  border-bottom: 1px solid grey;
+}
+
+#update-btn > input {
+  width: 150px;
+  height: 40px;
+  border-style: none;
+  background-color: #03a9f4;
+  padding:0;
+  margin:0;
+}
+
+#availability-btn {
+  border:1px solid grey;
+  width:150px;
+  height:40px;
+  display:inline-block;
+  text-align: center;
+  user-select: none;
+}
+
+#change-availability {
+  width: 150px;
+  height: 40px;
+  border-style: none;
+  background-color: #03a9f4;
+}
+
+#change-availability-2 {
+  width: 150px;
+  height: 40px;
+  border-style: none;
+  background-color: #DB4141;
+}
+
+#update-meal-form {
+  display:inline-block;
+  width:0;
+  height:0;
+}
+
+.meal-btn-template {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 0.45fr 0.5fr;
+  min-width: 350px;
+  max-width: 350px;
+  height: 40px;
+}

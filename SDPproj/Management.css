@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans SC', sans-serif!important;
+  margin:0;
+  padding:0;
+  width: 100%;
+  max-width:100%;
+  background-color:#303030 !important;
+}
+
+.wrapper {
+  padding-top: 150px;
+  background-color: rgba(51, 48, 48);
+  min-width: 1080px;
+  height: 741px;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1080px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  background-color: #424242;
+}
+
+#icon {
+  border-right: 1px solid;
+  text-align: center;
+  padding-top: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
+  transition: 0.5s;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#icon:hover {
+  background-color: #03a9f4;
+}
+
+#icon-title {
+ margin-top: 20px;
+ font-size: 22px;
+}
+
+#icon-desc {
+  margin-top: 15px;
+  font-size: 18px;
+  color: grey;
+}
+
+a > img {
+  width: 150px;
+  height: 150px;
+}

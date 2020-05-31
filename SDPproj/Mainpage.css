@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans SC', sans-serif !important;
+  margin:0;
+  padding:0;
+  width: 100%;
+  max-width:100%;
+  background-color:#212121 !important;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+.wrapper {
+  position: relative;
+  padding-top:50px;
+  min-width: 1080px;
+}
+
+#mainpage-title {
+
+  position: relative;
+  min-height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 30px;
+  user-select: none;
+
+}
+
+
+.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
+    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+        .MultiCarousel .MultiCarousel-inner .item { float: left;}
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+    .MultiCarousel .leftLst { left:0; }
+    .MultiCarousel .rightLst { right:0; }
+
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+
+        input[type="image"] {
+          width: 166px;
+          height: 150px;
+        object-fit: cover;
+        }
+
+        .pad15 > img {
+          width: 166px;
+          height: 150px;
+          object-fit: cover;
+        }
+
+        .pad15 {
+          margin-left: 15px;
+          margin-right: 15px;
+          min-height: 150px;
+          max-height: 150px;
+          min-width: 166px;
+          max-width: 166px;
+        }
+
+
+.menu-template {
+  position: relative;
+  min-width: 1080px;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #303030;
+  margin-bottom: 30px;
+}
+
+#menu-category {
+  max-height: 800px;
+  background-color: #303030;
+}
+
+#searchbox {
+  position: relative;
+  height: 50px;
+  min-width: 900px;
+  background-color: white;
+  margin-bottom: 50px;
+  padding-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+#searchbox form {
+  width: 100%;
+  max-height: 40px;
+}
+
+#searchbox input[type="image"] {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+#searchtextbox {
+  outline:0;
+  border-style: none;
+  min-height: 36px;
+  margin-left: 10px;
+  font-size: 20px;
+  background-color: none;
+  width: 80%;
+}
+
+@media screen and (max-width:1300px) {
+  #searchbox{
+    width: 300px;
+  }
+  #searchtextbox {
+    width: 250px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  #searchbox{
+    width: 250px;
+  }
+  #searchtextbox{
+    width: 200px;
+  }
+}
+
+.menu-desc-template {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 400px;
+  max-height: 1000px;
+  width: 100%;
+  margin-bottom: 20px;
+  overflow-y: auto;
+}
+
+
+.menu-desc-template::-webkit-scrollbar {
+width: 5px;
+}
+
+.menu-desc-template::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+
+#menu-desc {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.5fr;
+  margin:15px;
+}
+
+#menu-pic {
+}
+
+#menu-pic > img {
+  width: 350px;
+  height: 246.66px;
+  object-fit: cover;
+}
+
+#menu-btn {
+
+}
+
+#menu-name {
+  height: 60px;
+  padding-top: 14px;
+  background-color: #313131;
+  color: white;
+  text-align: center;
+  font-size: 21px;
+  padding-left: 8px;
+}
+
+#learn-more-btn {
+  height: 62px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 13px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#learn-more-btn:hover {
+  background-color: #03a9f4;
+}
+
+#meal-iframe {
+  position: fixed;
+  min-height: 700px;
+  max-height: 700px;
+  min-width: 1000px;
+  max-width: 1000px;
+  margin-top: -320px;
+  margin-left: 60px;
+}
+
+#learn-more-btn > input {
+  width: 314px;
+  height: 40px;
+  border-style: none;
+  background-color: #03a9f4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#menu-desc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.4fr;
+  grid-auto-rows: 280px;
+  max-height: 800px;
+  overflow: auto;
+  border-top: solid 1px;
+}
+
+#menu-desc::-webkit-scrollbar {
+width: 5px;
+}
+
+#menu-desc::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+
+#hot-deals , #breakfast , #sets , #spicy , #western , #asians , #desserts , #drinks {
+  min-height: 70px;
+  padding-left: 25px;
+  font-size: 18px;
+  padding-top: 20px;
+
+}
+
+
+#hot-deals:hover , #breakfast:hover , #sets:hover , #spicy:hover , #western:hover , #asians:hover , #desserts:hover , #drinks:hover  {
+
+  background-color: #03a9f4;
+  transition: 0.5s;
+
+}
+
+#meal-image {
+  min-height: 280px;
+  max-height: 280px;
+
+}
+
+#meal-info {
+  min-height: 280px;
+  max-height: 280px;
+  border-bottom: 1px solid grey;
+  margin-right: 10px;
+  padding-left: 15px;
+  padding-top: 30px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#meal-info::-webkit-scrollbar {
+width: 5px;
+}
+
+#meal-info::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+
+
+
+#meal-image {
+  margin-left: 10px;
+  padding-top: 60px;
+  padding-left: 30px;
+  border-bottom: 1px solid grey;
+}
+
+#meal-image > img {
+  width: 315px;
+  height: 180px;
+
+}
+
+#meal-title {
+  margin:0;
+  padding:0;
+  font-size: 25px;
+}
+
+#meal-desc {
+  color: grey;
+  margin:0;
+  padding:0;
+  font-size: 18px;
+  min-height: 145px;
+  max-height: 145px;
+  width: 530px;
+  text-overflow: clip;
+}
+
+#label-go-meal {
+  position: relative;
+  height: 40px;
+  width: 150px;
+  background-color: #03a9f4;
+  font-size: 18px;
+  float: right;
+}
+
+#link {
+  text-decoration: none;
+  color: white;
+
+}
+
+#label-go-meal > input[type="submit"] {
+  min-width: 150px;
+  min-height: 40px;
+  border-style: none;
+  background-color: #03a9f4;
+}
+
+
+
+#label-go-meal {
+  color: white;
+} */
